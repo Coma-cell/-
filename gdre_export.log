@@ -1,0 +1,74 @@
+GDRE Tools v0.9.0-beta.4
+EndeavourOS #1 SMP PREEMPT_DYNAMIC Sun, 23 Mar 2025 17:17:30 +0000, Mesa Intel(R) UHD Graphics 620 (WHL GT2), opengl3
+Opening file: ~/Downloads/linux/Inverted Racing Linux.x86_64
+WARNING: Could not find embedded pck in EXE, found pck file, loading from: ~/Downloads/linux/Inverted Racing Linux.x86_64
+   at: load_project (modules/gdsdecomp/utility/gdre_settings.cpp:586)
+Guessing bytecode revision from engine version: 4.1.0 (rev 0x77af6ca)
+WARNING: XCreateIC couldn't create wd.xic
+   at: _create_window (platform/linuxbsd/x11/display_server_x11.cpp:6277)
+Verified 131 files, no errors detected!
+WARNING: XCreateIC couldn't create wd.xic
+   at: _create_window (platform/linuxbsd/x11/display_server_x11.cpp:6277)
+WARNING: XCreateIC couldn't create wd.xic
+   at: _create_window (platform/linuxbsd/x11/display_server_x11.cpp:6277)
+Extracted 131 files, no errors detected!
+WARNING: XCreateIC couldn't create wd.xic
+   at: _create_window (platform/linuxbsd/x11/display_server_x11.cpp:6277)
+WARNING: Converting lossy imports, you may lose fidelity for indicated assets when re-importing upon loading the project
+   at: _export_imports (modules/gdsdecomp/utility/import_exporter.cpp:241)
+Recreating plugin configs...
+Exporting resources in parallel...
+Saved project config project.godot.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     0
+Failed scripts:                         0
+Imported resources for export session:  57
+Successfully converted:                 57
+Lossy:                                  0
+Rewrote metadata:                       17
+Non-importable conversions:             11
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+------
+
+The following files were converted and saved to a non-original path, but did not have their import data rewritten.
+These files will not be re-imported when loading the project.
+res://.godot/imported/industrial_sunset_puresky_2k.hdr-c343f0d92b450ce41f4519606de58f69.bptc.ctex to res://.assets/hdri/industrial_sunset_puresky_2k.png
+res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex to res://.assets/icon.png
+res://.godot/imported/Car.glb-a10de6e2bf654de887a32c02de56e270.scn to res://.assets/models/Car.glb
+res://.godot/imported/FinishLine.glb-c6faeb1a1373edb31d7c6c87713f4fb5.scn to res://.assets/models/FinishLine.glb
+res://.godot/imported/RoadTile.glb-f0c047667ac9a9f8e70a049ec5a34431.scn to res://.assets/models/RoadTile.glb
+res://.godot/imported/RoadTileLong.glb-4c8587485bba27691fd12787814ca4d0.scn to res://.assets/models/RoadTileLong.glb
+res://.godot/imported/RoadTileLonger.glb-7b79414f75d30de18b4026e4846cc78d.scn to res://.assets/models/RoadTileLonger.glb
+res://.godot/imported/RoadTileLongest.glb-d6fdb3040e4f522b6de6d07db4a098f3.scn to res://.assets/models/RoadTileLongest.glb
+res://.godot/imported/SpeedBumpRound.glb-273f71bdd549559d2bc1ac1d7b9e6e86.scn to res://.assets/models/SpeedBumpRound.glb
+res://.godot/imported/SpeedBumpSquare.glb-b00388e7229fce3c7155899c121d1638.scn to res://.assets/models/SpeedBumpSquare.glb
+res://.godot/imported/Wheel.glb-6d57db6dfd7110f391e485039a40645a.scn to res://.assets/models/Wheel.glb
+
+
+
+---------------------------------IMPORTANT NOTES----------------------------------
+
+
+Experimental Scene Export:
+Scene export is EXPERIMENTAL and exported scenes may be inaccurate.
+Thus, all exported scenes have been saved to the .assets directory, which will not be picked up by the editor for import.
+Please report any issues you encounter with exported scenes to the Github page Github.
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.1.0 to edit the project.
+Note: the project may be using a custom version of Godot. Detection for this has not been implemented yet.
+If you find that you have many non-import errors upon opening the project 
+(i.e. scripts or shaders have many errors), use the original game's binary as the export template.
+
+*******************************************************************************
+

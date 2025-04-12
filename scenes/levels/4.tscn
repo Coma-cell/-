@@ -1,0 +1,45 @@
+[gd_scene load_steps=6 format=3 uid="uid://bi5gu566oosox"]
+
+[ext_resource type="PackedScene" uid="uid://d1hav7mq0aqdn" path="res://scenes/base level.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://c12605u0t38im" path="res://scenes/road_tile.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c4xrpt4eupmhw" path="res://scenes/road_tile_long.tscn" id="3"]
+
+[sub_resource type="TextMesh" id="TextMesh_7y20g"]
+resource_local_to_scene = true
+text = "Level 4: Ramps"
+font_size = 127
+curve_step = 10.0
+depth = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ggi0i"]
+size = Vector3(270.146, 73.5044, 24.4673)
+
+[node name="Level" instance=ExtResource("1")]
+
+[node name="LevelText" parent="World" index="0"]
+mesh = SubResource("TextMesh_7y20g")
+
+[node name="Road Tile" parent="World" index="2" instance=ExtResource("2")]
+transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 44, 0, 0)
+
+[node name="Road Tile2" parent="World" index="3" instance=ExtResource("2")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 51.7274, 2.07055, 0)
+
+[node name="FinishLine" parent="World" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 0)
+
+[node name="RoadTileLong2" parent="World" index="5" instance=ExtResource("3")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 146.152, 0, -3.02271e-06)
+
+[node name="Road Tile3" parent="World" index="6" instance=ExtResource("2")]
+transform = Transform3D(-0.965926, 0.258819, -8.74228e-08, 0.258819, 0.965926, 0, 8.44439e-08, -2.26267e-08, -1, 98.1516, 0, 1.17358e-06)
+
+[node name="Road Tile4" parent="World" index="7" instance=ExtResource("2")]
+transform = Transform3D(-0.866025, 0.5, -8.74228e-08, 0.5, 0.866025, 0, 7.57103e-08, -4.37114e-08, -1, 90.4242, 2.07055, 1.84913e-06)
+
+[node name="CollisionShape3D" parent="World/Bounds" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.2489, 7.38421, 0)
+shape = SubResource("BoxShape3D_ggi0i")
+
+[node name="Player" parent="." index="3"]
+next_level = "res://scenes/levels/5.tscn"

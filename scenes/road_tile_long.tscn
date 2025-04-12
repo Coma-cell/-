@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://c4xrpt4eupmhw"]
+
+[ext_resource type="PackedScene" uid="uid://o473dwqsfdon" path="res://models/RoadTileLong.glb" id="1"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ct2f3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c2cfh"]
+size = Vector3(8, 1, 48)
+
+[node name="RoadTileLong" type="StaticBody3D"]
+physics_material_override = SubResource("PhysicsMaterial_ct2f3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 24, -0.5, 0)
+shape = SubResource("BoxShape3D_c2cfh")
+
+[node name="RoadTileLong" parent="." instance=ExtResource("1")]

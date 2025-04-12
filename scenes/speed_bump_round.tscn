@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://8iy8c2f3v1hn"]
+
+[ext_resource type="PackedScene" uid="uid://bkejaexs6ku2" path="res://models/SpeedBumpRound.glb" id="1"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_07ihw"]
+height = 4.0
+radius = 1.0
+
+[node name="SpeedBumpRound" type="StaticBody3D"]
+
+[node name="SpeedBumpRound" parent="." instance=ExtResource("1")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.7, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.91069e-15, -4.37114e-08, 1, -1, -4.37114e-08, 0, 4.37114e-08, -1, -4.37114e-08, 0, -0.7, 0)
+shape = SubResource("CylinderShape3D_07ihw")

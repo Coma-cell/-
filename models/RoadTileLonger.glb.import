@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cl2fcn8e7gvm8"
+path="res://.godot/imported/RoadTileLonger.glb-7b79414f75d30de18b4026e4846cc78d.scn"
+
+[deps]
+
+source_file="res://models/RoadTileLonger.glb"
+dest_files=["res://.godot/imported/RoadTileLonger.glb-7b79414f75d30de18b4026e4846cc78d.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

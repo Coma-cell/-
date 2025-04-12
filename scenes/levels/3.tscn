@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://bg4jqtaede50h"]
+
+[ext_resource type="PackedScene" uid="uid://d1hav7mq0aqdn" path="res://scenes/base level.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://c4xrpt4eupmhw" path="res://scenes/road_tile_long.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://8iy8c2f3v1hn" path="res://scenes/speed_bump_round.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://bmcejaop3vdr5" path="res://scenes/speed_bump_square.tscn" id="4"]
+
+[sub_resource type="TextMesh" id="TextMesh_mt7gv"]
+resource_local_to_scene = true
+text = "Level 3: Speed Bumps"
+font_size = 127
+curve_step = 10.0
+depth = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nvy0u"]
+size = Vector3(255.664, 84.5923, 31.5205)
+
+[node name="Level" instance=ExtResource("1")]
+
+[node name="LevelText" parent="World" index="0"]
+mesh = SubResource("TextMesh_mt7gv")
+
+[node name="RoadTileLong2" parent="World" index="2" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44, 0, 0)
+
+[node name="RoadTileLong3" parent="World" index="3" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92, 0, 0)
+
+[node name="SpeedBumpRound" parent="World" index="4" instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, 0)
+
+[node name="SpeedBumpRound2" parent="World" index="5" instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32, 0, 0)
+
+[node name="SpeedBumpRound3" parent="World" index="6" instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48, 0, 0)
+
+[node name="SpeedBumpRound4" parent="World" index="7" instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0, 0)
+
+[node name="Speed Bump Square" parent="World" index="8" instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80, 0, 0)
+
+[node name="Speed Bump Square2" parent="World" index="9" instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 0, 0)
+
+[node name="Speed Bump Square3" parent="World" index="10" instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 112, 0, 0)
+
+[node name="FinishLine" parent="World" index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 136, 0, 0)
+
+[node name="CollisionShape3D" parent="World/Bounds" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.6621, 3.15186, 0)
+shape = SubResource("BoxShape3D_nvy0u")
+
+[node name="Player" parent="." index="3"]
+next_level = "res://scenes/levels/4.tscn"

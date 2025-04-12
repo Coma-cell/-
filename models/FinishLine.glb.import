@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://c4odrbf3sksrs"
+path="res://.godot/imported/FinishLine.glb-c6faeb1a1373edb31d7c6c87713f4fb5.scn"
+
+[deps]
+
+source_file="res://models/FinishLine.glb"
+dest_files=["res://.godot/imported/FinishLine.glb-c6faeb1a1373edb31d7c6c87713f4fb5.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

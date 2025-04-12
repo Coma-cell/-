@@ -1,0 +1,105 @@
+[gd_scene load_steps=6 format=3 uid="uid://ccib4gsf7ff00"]
+
+[ext_resource type="PackedScene" uid="uid://d1hav7mq0aqdn" path="res://scenes/base level.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://c4xrpt4eupmhw" path="res://scenes/road_tile_long.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c12605u0t38im" path="res://scenes/road_tile.tscn" id="3"]
+
+[sub_resource type="TextMesh" id="TextMesh_5lx52"]
+resource_local_to_scene = true
+text = "Level 2: Loop De Loop"
+font_size = 127
+curve_step = 10.0
+depth = 0.1
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_y53n6"]
+size = Vector3(158.744, 121.664, 20.4119)
+
+[node name="Level" instance=ExtResource("1")]
+
+[node name="LevelText" parent="World" index="0"]
+mesh = SubResource("TextMesh_5lx52")
+
+[node name="RoadTileLong2" parent="World" index="2" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, 0)
+
+[node name="Road Tile" parent="World" index="3" instance=ExtResource("3")]
+transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 44, 0, 0)
+
+[node name="Road Tile2" parent="World" index="4" instance=ExtResource("3")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 51.7274, 2.07055, 0)
+
+[node name="Road Tile3" parent="World" index="5" instance=ExtResource("3")]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 58.6556, 6.07055, 0)
+
+[node name="Road Tile4" parent="World" index="6" instance=ExtResource("3")]
+transform = Transform3D(0.5, -0.866025, 0, 0.866025, 0.5, 0, 0, 0, 1, 64.3125, 11.7274, 0)
+
+[node name="Road Tile5" parent="World" index="7" instance=ExtResource("3")]
+transform = Transform3D(0.258819, -0.965926, 0, 0.965926, 0.258819, 0, 0, 0, 1, 68.3125, 18.6556, 0)
+
+[node name="Road Tile6" parent="World" index="8" instance=ExtResource("3")]
+transform = Transform3D(-2.98023e-08, -1, 0, 1, -2.98023e-08, 0, 0, 0, 1, 70.383, 26.383, 0)
+
+[node name="Road Tile7" parent="World" index="9" instance=ExtResource("3")]
+transform = Transform3D(-2.98023e-08, -1, 0, 1, -2.98023e-08, 0, 0, 0, 1, 70.383, 34.383, 0)
+
+[node name="Road Tile8" parent="World" index="10" instance=ExtResource("3")]
+transform = Transform3D(-2.98023e-08, -1, 0, 1, -2.98023e-08, 0, 0, 0, 1, 70.383, 42.383, 0)
+
+[node name="Road Tile9" parent="World" index="11" instance=ExtResource("3")]
+transform = Transform3D(-0.258819, -0.965926, 0, 0.965926, -0.258819, 0, 0, 0, 1, 70.383, 50.383, 0)
+
+[node name="Road Tile10" parent="World" index="12" instance=ExtResource("3")]
+transform = Transform3D(-0.5, -0.866025, 0, 0.866025, -0.5, 0, 0, 0, 1, 68.3125, 58.1104, 0)
+
+[node name="Road Tile11" parent="World" index="13" instance=ExtResource("3")]
+transform = Transform3D(-0.707107, -0.707107, 0, 0.707107, -0.707107, 0, 0, 0, 1, 64.3125, 65.0386, 0)
+
+[node name="Road Tile12" parent="World" index="14" instance=ExtResource("3")]
+transform = Transform3D(-0.866025, -0.5, 0, 0.5, -0.866025, 0, 0, 0, 1, 58.6556, 70.6955, 0)
+
+[node name="Road Tile13" parent="World" index="15" instance=ExtResource("3")]
+transform = Transform3D(-0.965926, -0.258819, 0, 0.258819, -0.965926, 0, 0, 0, 1, 51.7274, 74.6955, 0)
+
+[node name="Road Tile14" parent="World" index="16" instance=ExtResource("3")]
+transform = Transform3D(-1, 2.98023e-08, 0, -2.98023e-08, -1, 0, 0, 0, 1, 44, 76.766, 0)
+
+[node name="Road Tile15" parent="World" index="17" instance=ExtResource("3")]
+transform = Transform3D(-1, 2.98023e-08, 0, -2.98023e-08, -1, 0, 0, 0, 1, 36, 76.766, 0)
+
+[node name="Road Tile16" parent="World" index="18" instance=ExtResource("3")]
+transform = Transform3D(-1, 2.98023e-08, 0, -2.98023e-08, -1, 0, 0, 0, 1, 28, 76.766, 0)
+
+[node name="Road Tile17" parent="World" index="19" instance=ExtResource("3")]
+transform = Transform3D(-0.965925, 0.258819, 0, -0.258819, -0.965925, 0, 0, 0, 1, 20, 76.766, 0)
+
+[node name="Road Tile18" parent="World" index="20" instance=ExtResource("3")]
+transform = Transform3D(-0.866025, 0.5, 0, -0.5, -0.866025, 0, 0, 0, 1, 12.2726, 74.6955, 0)
+
+[node name="Road Tile19" parent="World" index="21" instance=ExtResource("3")]
+transform = Transform3D(-0.707106, 0.707106, 0, -0.707106, -0.707106, 0, 0, 0, 1, 5.34441, 70.6955, 0)
+
+[node name="Road Tile20" parent="World" index="22" instance=ExtResource("3")]
+transform = Transform3D(-0.5, 0.866025, 0, -0.866025, -0.5, 0, 0, 0, 1, -0.31244, 65.0386, 0)
+
+[node name="Road Tile21" parent="World" index="23" instance=ExtResource("3")]
+transform = Transform3D(-0.258819, 0.965925, 0, -0.965925, -0.258819, 0, 0, 0, 1, -4.31244, 58.1104, 0)
+
+[node name="Road Tile22" parent="World" index="24" instance=ExtResource("3")]
+transform = Transform3D(4.47035e-08, 0.999999, 0, -0.999999, 4.47035e-08, 0, 0, 0, 1, -6.38299, 50.383, 0)
+
+[node name="Road Tile23" parent="World" index="25" instance=ExtResource("3")]
+transform = Transform3D(4.47035e-08, 0.999999, 0, -0.999999, 4.47035e-08, 0, 0, 0, 1, -6.38299, 42.383, 0)
+
+[node name="Road Tile24" parent="World" index="26" instance=ExtResource("3")]
+transform = Transform3D(4.47035e-08, 0.999999, 0, -0.999999, 4.47035e-08, 0, 0, 0, 1, -6.38299, 34.383, 0)
+
+[node name="FinishLine" parent="World" index="27"]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -6.4, 30, 0)
+
+[node name="CollisionShape3D" parent="World/Bounds" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.181, 38.0586, 7.62939e-06)
+shape = SubResource("BoxShape3D_y53n6")
+
+[node name="Player" parent="." index="3"]
+next_level = "res://scenes/levels/3.tscn"

@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://d1hav7mq0aqdn"]
+
+[ext_resource type="Script" uid="uid://c25jwpky3nkyh" path="res://scripts/world.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://c4xrpt4eupmhw" path="res://scenes/road_tile_long.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dha3e35mellml" path="res://scenes/finish_line.tscn" id="3"]
+[ext_resource type="AudioStream" uid="uid://e7xhihm6b8dl" path="res://sfx/Click sound 8.wav" id="4"]
+[ext_resource type="PackedScene" uid="uid://bp13u60do4abi" path="res://scenes/player.tscn" id="5"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_h84rl"]
+sky_top_color = Color(0.611765, 0.611765, 0.611765, 1)
+sky_horizon_color = Color(0.513726, 0.513726, 0.513726, 1)
+ground_bottom_color = Color(0.513726, 0.513726, 0.513726, 1)
+ground_horizon_color = Color(0.513726, 0.513726, 0.513726, 1)
+
+[sub_resource type="Sky" id="Sky_d7x2c"]
+sky_material = SubResource("ProceduralSkyMaterial_h84rl")
+
+[sub_resource type="Environment" id="Environment_mpoax"]
+background_mode = 2
+background_energy_multiplier = 0.8
+sky = SubResource("Sky_d7x2c")
+ambient_light_sky_contribution = 0.45
+tonemap_mode = 3
+
+[sub_resource type="TextMesh" id="TextMesh_u75ay"]
+resource_local_to_scene = true
+text = "Level X: Base Level"
+font_size = 127
+curve_step = 10.0
+depth = 0.1
+
+[node name="Level" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mpoax")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.25, -0.433013, 0, 0.866025, 0.5, 0.5, -0.433013, 0.75, 0, 10, 0)
+shadow_enabled = true
+
+[node name="World" type="Node3D" parent="."]
+script = ExtResource("1")
+speed = 50
+
+[node name="LevelText" type="MeshInstance3D" parent="World"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 4, -8)
+mesh = SubResource("TextMesh_u75ay")
+skeleton = NodePath("../..")
+
+[node name="RoadTileLong" parent="World" instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="FinishLine" parent="World" instance=ExtResource("3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 35, 0, 0)
+
+[node name="Bounds" type="Area3D" parent="World"]
+collision_layer = 128
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="World/Bounds"]
+
+[node name="Click" type="AudioStreamPlayer" parent="World"]
+stream = ExtResource("4")
+volume_db = -40.0
+autoplay = true
+
+[node name="Player" parent="." instance=ExtResource("5")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1, 0)

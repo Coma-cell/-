@@ -1,0 +1,181 @@
+[gd_scene load_steps=9 format=3 uid="uid://clcsci2b2eqbo"]
+
+[ext_resource type="Script" uid="uid://cuitqcdvi8ok7" path="res://scripts/player.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cavywld24vo7i" path="res://models/Car.glb" id="2"]
+[ext_resource type="PackedScene" uid="uid://ceotr2ny82ayg" path="res://models/Wheel.glb" id="3"]
+[ext_resource type="Script" uid="uid://bwohqb77vw06b" path="res://scripts/camera.gd" id="4"]
+[ext_resource type="Script" uid="uid://cujtechiu4d5r" path="res://scripts/timer.gd" id="5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uyd83"]
+size = Vector3(4, 1, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_skn5s"]
+height = 0.2
+radius = 0.3
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_mvwuk"]
+size = Vector3(2, 2, 1)
+
+[node name="Player" type="RigidBody3D"]
+collision_layer = 8
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.292557, 0.703864, -1.27881e-08)
+shape = SubResource("BoxShape3D_uyd83")
+
+[node name="Car" parent="." instance=ExtResource("2")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.292557, 0.8, -1.27881e-08)
+
+[node name="FrontLeft" type="RigidBody3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.24427, 0.2, -0.5)
+collision_layer = 4
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+gravity_scale = 0.0
+
+[node name="Wheel" parent="FrontLeft" instance=ExtResource("3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FrontLeft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_skn5s")
+
+[node name="FrontRight" type="RigidBody3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1.24427, 0.2, 0.5)
+collision_layer = 4
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+gravity_scale = 0.0
+
+[node name="Wheel" parent="FrontRight" instance=ExtResource("3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FrontRight"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_skn5s")
+
+[node name="BackLeft" type="RigidBody3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.098, 0.2, -0.5)
+collision_layer = 4
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+gravity_scale = 0.0
+
+[node name="Wheel" parent="BackLeft" instance=ExtResource("3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BackLeft"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_skn5s")
+
+[node name="BackRight" type="RigidBody3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1.098, 0.2, 0.5)
+collision_layer = 4
+axis_lock_linear_x = true
+axis_lock_linear_y = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+gravity_scale = 0.0
+
+[node name="Wheel" parent="BackRight" instance=ExtResource("3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BackRight"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+shape = SubResource("CylinderShape3D_skn5s")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 8, 20)
+top_level = true
+current = true
+fov = 60.0
+script = ExtResource("4")
+target_ref = NodePath("..")
+offset = Vector3(-6, 8, 10)
+camera_speed = 50
+
+[node name="FinishLineDetector" type="Area3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.2, 1, 0)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishLineDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.55671e-08, 0, 1.5)
+shape = SubResource("BoxShape3D_mvwuk")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GUI" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="CanvasLayer/GUI"]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 112.0
+
+[node name="Timer" type="Label" parent="CanvasLayer/GUI/Panel"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 95.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 56
+text = "0.0"
+script = ExtResource("5")
+
+[node name="End" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.215686, 0.215686, 0.215686, 0.411765)
+
+[node name="FinalScore" type="Label" parent="CanvasLayer/End"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Restart" type="Button" parent="CanvasLayer/End"]
+layout_mode = 2
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = 288.0
+offset_right = -127.0
+offset_bottom = -296.0
+theme_override_font_sizes/font_size = 32
+text = "Restart"
+
+[node name="Next" type="Button" parent="CanvasLayer/End"]
+layout_mode = 2
+offset_left = 704.0
+offset_top = 288.0
+offset_right = 832.0
+offset_bottom = 352.0
+theme_override_font_sizes/font_size = 32
+text = "  Next   "
+
+[connection signal="area_entered" from="FinishLineDetector" to="." method="_on_finish_line_detector_area_entered" flags=18]
+[connection signal="pressed" from="CanvasLayer/End/Restart" to="." method="_on_restart_pressed" flags=18]
+[connection signal="pressed" from="CanvasLayer/End/Next" to="." method="_on_next_pressed" flags=18]

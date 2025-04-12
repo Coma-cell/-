@@ -1,0 +1,185 @@
+[gd_scene load_steps=13 format=3 uid="uid://bp13u60do4abi"]
+
+[ext_resource type="Script" uid="uid://cuitqcdvi8ok7" path="res://scripts/player.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cavywld24vo7i" path="res://models/Car.glb" id="2"]
+[ext_resource type="PackedScene" uid="uid://ceotr2ny82ayg" path="res://models/Wheel.glb" id="3"]
+[ext_resource type="AudioStream" uid="uid://bleod1yq50n7t" path="res://sfx/Car Impact Concrete_3.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://20mgjspu5j5j" path="res://sfx/Car Engine Loop_3.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://dt4t8mv6lx46q" path="res://sfx/Impact 2.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://casbf5t46ixsr" path="res://sfx/Wind Storm.wav" id="7"]
+[ext_resource type="Script" uid="uid://bwohqb77vw06b" path="res://scripts/camera.gd" id="8"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_35iuo"]
+friction = 0.85
+absorbent = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e3hqx"]
+size = Vector3(4.16033, 0.999351, 1.20112)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bjo17"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_47i2l"]
+size = Vector3(2, 2, 1)
+
+[node name="Player" type="VehicleBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+top_level = true
+axis_lock_linear_z = true
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+mass = 20.0
+physics_material_override = SubResource("PhysicsMaterial_35iuo")
+gravity_scale = 1.5
+continuous_cd = true
+max_contacts_reported = 2
+contact_monitor = true
+angular_damp = 6.0
+script = ExtResource("1")
+metadata/_edit_group_ = true
+
+[node name="Car" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, -0.0507832, -0.0614059)
+shape = SubResource("BoxShape3D_e3hqx")
+
+[node name="FrontRight" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.448, 0.951)
+use_as_traction = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+suspension_stiffness = 100.0
+damping_compression = 1.0
+damping_relaxation = 0.0
+
+[node name="Wheel" parent="FrontRight" instance=ExtResource("3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="FrontLeft" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.448, 0.951)
+use_as_traction = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+suspension_stiffness = 100.0
+damping_compression = 1.0
+damping_relaxation = 0.0
+
+[node name="Wheel" parent="FrontLeft" instance=ExtResource("3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="BackRight" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, -0.448, -1.37445)
+use_as_traction = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+suspension_stiffness = 100.0
+damping_compression = 1.0
+damping_relaxation = 0.0
+
+[node name="Wheel" parent="BackRight" instance=ExtResource("3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="BackLeft" type="VehicleWheel3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.448, -1.37445)
+use_as_traction = true
+wheel_roll_influence = 0.0
+wheel_radius = 0.3
+wheel_rest_length = 0.2
+suspension_stiffness = 100.0
+damping_compression = 1.0
+damping_relaxation = 0.0
+
+[node name="Wheel" parent="BackLeft" instance=ExtResource("3")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+
+[node name="Hit" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("4")
+volume_db = -80.0
+
+[node name="Engine" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5")
+autoplay = true
+
+[node name="Finish" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("6")
+
+[node name="Wind" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7")
+autoplay = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 8, 20)
+top_level = true
+fov = 60.0
+script = ExtResource("8")
+target_ref = NodePath("..")
+offset = Vector3(-6, 8, 10)
+camera_speed = 80
+
+[node name="BoundsDetector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 128
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="BoundsDetector"]
+shape = SubResource("BoxShape3D_bjo17")
+
+[node name="FinishLineDetector" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FinishLineDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.55671e-08, 0, 1.5)
+shape = SubResource("BoxShape3D_47i2l")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="End" type="ColorRect" parent="CanvasLayer"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.215686, 0.215686, 0.215686, 0.411765)
+
+[node name="FinalScore" type="Label" parent="CanvasLayer/End"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Restart" type="Button" parent="CanvasLayer/End"]
+layout_mode = 2
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 320.0
+offset_top = 288.0
+offset_right = -127.0
+offset_bottom = -296.0
+theme_override_font_sizes/font_size = 32
+text = "Restart"
+
+[node name="Next" type="Button" parent="CanvasLayer/End"]
+layout_mode = 2
+offset_left = 704.0
+offset_top = 288.0
+offset_right = 832.0
+offset_bottom = 352.0
+theme_override_font_sizes/font_size = 32
+text = "  Next   "
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered" flags=18]
+[connection signal="area_exited" from="BoundsDetector" to="." method="_on_bounds_detector_area_exited" flags=18]
+[connection signal="area_entered" from="FinishLineDetector" to="." method="_on_finish_line_detector_area_entered" flags=18]
+[connection signal="pressed" from="CanvasLayer/End/Restart" to="." method="_on_restart_pressed" flags=18]
+[connection signal="pressed" from="CanvasLayer/End/Next" to="." method="_on_next_pressed" flags=18]

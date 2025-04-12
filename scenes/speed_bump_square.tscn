@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmcejaop3vdr5"]
+
+[ext_resource type="PackedScene" uid="uid://ddv0g2tadagof" path="res://models/SpeedBumpSquare.glb" id="1"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_f3p2r"]
+data = PackedVector3Array(-1.6, 0, 0.8, -1.6, 0, -0.8, -1.6, 0.709, -0.8, -1.6, 0, -0.8, 1.6, 0.709, -0.8, -1.6, 0.709, -0.8, -1.6, 0, -0.8, 1.6, 0, -0.8, 1.6, 0.709, -0.8, 1.6, 0, -0.8, 1.6, 0, 0.8, 1.6, 0.709, -0.8, -1.6, 0, -0.8, 1.6, 0, 0.8, 1.6, 0, -0.8, -1.6, 0, -0.8, -1.6, 0, 0.8, 1.6, 0, 0.8, 1.6, 0.709, -0.8, -1.6, 0, 0.8, -1.6, 0.709, -0.8, 1.6, 0.709, -0.8, 1.6, 0, 0.8, -1.6, 0, 0.8)
+
+[node name="Speed Bump Square" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, -0.5, 0)
+shape = SubResource("ConcavePolygonShape3D_f3p2r")
+
+[node name="SpeedBumpSquare" parent="." instance=ExtResource("1")]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, -0.5, 0)

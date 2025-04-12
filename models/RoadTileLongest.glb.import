@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://xr4qtujqdgvq"
+path="res://.godot/imported/RoadTileLongest.glb-d6fdb3040e4f522b6de6d07db4a098f3.scn"
+
+[deps]
+
+source_file="res://models/RoadTileLongest.glb"
+dest_files=["res://.godot/imported/RoadTileLongest.glb-d6fdb3040e4f522b6de6d07db4a098f3.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

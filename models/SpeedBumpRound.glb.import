@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bkejaexs6ku2"
+path="res://.godot/imported/SpeedBumpRound.glb-273f71bdd549559d2bc1ac1d7b9e6e86.scn"
+
+[deps]
+
+source_file="res://models/SpeedBumpRound.glb"
+dest_files=["res://.godot/imported/SpeedBumpRound.glb-273f71bdd549559d2bc1ac1d7b9e6e86.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

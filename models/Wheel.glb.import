@@ -1,0 +1,16 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://ceotr2ny82ayg"
+path="res://.godot/imported/Wheel.glb-6d57db6dfd7110f391e485039a40645a.scn"
+
+[deps]
+
+source_file="res://models/Wheel.glb"
+dest_files=["res://.godot/imported/Wheel.glb-6d57db6dfd7110f391e485039a40645a.scn"]
+
+[params]
+
+dummy_value_ignore_me=0

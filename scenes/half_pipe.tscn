@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://b70yawltautba"]
+
+[ext_resource type="PackedScene" uid="uid://c12605u0t38im" path="res://scenes/road_tile.tscn" id="1"]
+
+[node name="Half Pipe" type="Node3D"]
+
+[node name="Road Tile3" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.5, 0.866025, 0, -0.866025, 0.5, 0, 0, 0, 1, -25, 12, 0)
+
+[node name="Road Tile4" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0, 1, -21, 5.0718, 0)
+
+[node name="Road Tile5" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0, 1, -15.3431, -0.585058, 0)
+
+[node name="Road Tile6" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0, 1, -8.41495, -4.58506, 0)
+
+[node name="Road Tile7" parent="." instance=ExtResource("1")]
+transform = Transform3D(1, 7.45058e-08, 0, -7.45058e-08, 1, 0, 0, 0, 1, -0.687538, -6.65561, 0)
+
+[node name="Road Tile8" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.965926, -0.258819, 0, 0.258819, 0.965926, 0, 0, 0, 1, 7.31246, -6.65561, 0)
+
+[node name="Road Tile9" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.866025, -0.5, 0, 0.5, 0.866025, 0, 0, 0, 1, 15.0399, -4.58506, 0)
+
+[node name="Road Tile10" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 21.9681, -0.585061, 0)
+
+[node name="Road Tile11" parent="." instance=ExtResource("1")]
+transform = Transform3D(0.5, -0.866025, 0, 0.866025, 0.5, 0, 0, 0, 1, 27.6249, 5.07179, 0)

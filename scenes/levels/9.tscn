@@ -1,0 +1,64 @@
+[gd_scene load_steps=7 format=3 uid="uid://cwoy24ouw7o2c"]
+
+[ext_resource type="PackedScene" uid="uid://d1hav7mq0aqdn" path="res://scenes/base level.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://c4xrpt4eupmhw" path="res://scenes/road_tile_long.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c12605u0t38im" path="res://scenes/road_tile.tscn" id="3"]
+
+[sub_resource type="TextMesh" id="TextMesh_pp3qv"]
+resource_local_to_scene = true
+text = "Level 9: Back and Forth"
+font_size = 127
+curve_step = 10.0
+depth = 0.1
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ct2f3"]
+friction = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_valai"]
+size = Vector3(339.117, 202.996, 73.4814)
+
+[node name="Level" instance=ExtResource("1")]
+
+[node name="LevelText" parent="World" index="0"]
+mesh = SubResource("TextMesh_pp3qv")
+
+[node name="RoadTileLong" parent="World" index="1"]
+transform = Transform3D(0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0, 1, -4, 0, 0)
+
+[node name="RoadTileLong2" parent="World" index="2" instance=ExtResource("2")]
+transform = Transform3D(-0.965926, -0.258819, -8.74228e-08, -0.258819, 0.965926, 0, 8.44439e-08, 2.26267e-08, -1, 60.717, -17.3409, 0)
+
+[node name="RoadTileLong6" parent="World" index="3" instance=ExtResource("2")]
+transform = Transform3D(-0.965926, -0.258819, -8.74228e-08, -0.258819, 0.965926, 0, 8.44439e-08, 2.26267e-08, -1, 107.081, -4.91756, -4.05331e-06)
+
+[node name="RoadTileLong3" parent="World" index="4" instance=ExtResource("2")]
+transform = Transform3D(0.965926, 0.258819, 1.74846e-07, -0.258819, 0.965926, 0, -1.68888e-07, -4.52534e-08, 1, -4.00001, -34.6818, 5.65774e-06)
+
+[node name="RoadTileLong7" parent="World" index="5" instance=ExtResource("2")]
+transform = Transform3D(0.965926, 0.258819, 1.74846e-07, -0.258819, 0.965926, 0, -1.68888e-07, -4.52534e-08, 1, -50.3644, -22.2584, 1.37644e-05)
+
+[node name="RoadTileLong4" parent="World" index="6" instance=ExtResource("2")]
+transform = Transform3D(-0.965926, -0.258819, -2.62268e-07, -0.258819, 0.965926, 0, 2.53332e-07, 6.788e-08, -1, 60.717, -52.0226, -5.65774e-06)
+
+[node name="RoadTileLong8" parent="World" index="7" instance=ExtResource("2")]
+transform = Transform3D(-0.965926, -0.258819, -2.62268e-07, -0.258819, 0.965926, 0, 2.53332e-07, 6.788e-08, -1, 107.081, -39.5993, -1.78177e-05)
+
+[node name="RoadTileLong5" parent="World" index="8" instance=ExtResource("2")]
+transform = Transform3D(0.965926, 0.258819, 3.49691e-07, -0.258819, 0.965926, 0, -3.37776e-07, -9.05067e-08, 1, -4.00001, -69.3635, 1.13155e-05)
+
+[node name="RoadTileLong9" parent="World" index="9" instance=ExtResource("2")]
+transform = Transform3D(0.965926, 0.258819, 3.49691e-07, -0.258819, 0.965926, 0, -3.37776e-07, -9.05067e-08, 1, -50.3644, -56.9402, 2.75287e-05)
+
+[node name="Road Tile" parent="World" index="10" instance=ExtResource("3")]
+transform = Transform3D(1, 2.98023e-08, 3.49691e-07, -2.98023e-08, 1, -1.04216e-14, -3.49691e-07, 1.01644e-20, 1, 42.3644, -81.7868, -4.89775e-06)
+physics_material_override = SubResource("PhysicsMaterial_ct2f3")
+
+[node name="FinishLine" parent="World" index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46, -81.8349, 0)
+
+[node name="CollisionShape3D" parent="World/Bounds" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.5669, -38.0058, 0)
+shape = SubResource("BoxShape3D_valai")
+
+[node name="Player" parent="." index="3"]
+next_level = "res://scenes/levels/10.tscn"
