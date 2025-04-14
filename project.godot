@@ -25,6 +25,10 @@ SpeedrunTimer="*res://scenes/speedrun_timer.tscn"
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[dotnet]
+
+project/assembly_name="Inverted Racing"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/gd-blender-3d-shortcuts/plugin.cfg")

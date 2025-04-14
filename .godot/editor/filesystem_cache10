@@ -1,74 +1,74 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744626577
-gdre_export.log::TextFile/TextFile::-1::1744464772::0::1::::<><><>0<>0<><>::
-icon.svg::CompressedTexture2D/CompressedTexture2D::3949491545629177401::1744464770::1744465753::1::::<><><>0<>0<>ebdadfa0517c55ca8c7724c12b2e3224<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://addons/::1744464770
-::res://addons/gd-blender-3d-shortcuts/::1744465752
-plugin.cfg::TextFile/TextFile::-1::1744464771::0::1::::<><><>0<>0<><>::
-plugin.gd::GDScript/GDScript::1357225097704272525::1744464770::0::1::::<>EditorPlugin<><>0<>1<><>::
-Utils.gd::GDScript/GDScript::5693112391151300790::1744464770::0::1::::<>RefCounted<><>0<>0<><>::
-::res://addons/gd-blender-3d-shortcuts/scenes/::1744464770
-::res://addons/gd-blender-3d-shortcuts/scenes/pie_menu/::1744465767
-PieMenu.gd::GDScript/GDScript::8641390250669976176::1744464770::0::1::::<>Control<><>0<>1<><>::
-PieMenu.tscn::PackedScene/PackedScene::4042801803876559948::1744465767::0::1::::<><><>0<>0<><>::uid://dvd7o10sbf4ca::::res://addons/gd-blender-3d-shortcuts/scenes/pie_menu/PieMenu.gd
-PieMenuGroup.gd::GDScript/GDScript::8678479272397852172::1744464770::0::1::::<>Control<><>0<>1<><>::
-PieMenuGroup.tscn::PackedScene/PackedScene::6812751974458158249::1744465767::0::1::::<><><>0<>0<><>::uid://dvv6jyifnifu7::::res://addons/gd-blender-3d-shortcuts/scenes/pie_menu/PieMenuGroup.gd
-::res://hdri/::1744464770
-::res://models/::1744465768
-Car_Car Pallete.png::CompressedTexture2D/CompressedTexture2D::786255221341506102::1744464771::1744465755::1::::<><><>0<>0<>4f1b13bb5feb1ce127ad3e7f2046ceec<>res://.godot/imported/Car_Car Pallete.png-746d13e46bd21dba770e06a61c048326.s3tc.ctex::
-RoadTileLonger_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::9146882464930152910::1744464771::1744465753::1::::<><><>0<>0<>08f1b0a6db1f397b13f04fa424633e4a<>res://.godot/imported/RoadTileLonger_Road Pallette.png-803c8fcfa26bd1b25152641ca7275531.ctex::
-RoadTileLongest_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::6627802178155169464::1744464771::1744465753::1::::<><><>0<>0<>a5cf198e87807030d2becb43a48ebf53<>res://.godot/imported/RoadTileLongest_Road Pallette.png-9feea2c28cd3de28c65ac932f373c2ac.ctex::
-RoadTileLong_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::5714732681856323948::1744464771::1744465768::1::::<><><>0<>0<>18f27a0b7546ffcae7a162cb143ce689<>res://.godot/imported/RoadTileLong_Road Pallette.png-f28e742f5e458aa1c4bbb2444fd19345.s3tc.ctex::
-RoadTile_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::3985423517590724232::1744464771::1744465768::1::::<><><>0<>0<>c105c282b7e9483a8a140ad465342159<>res://.godot/imported/RoadTile_Road Pallette.png-4404edb1990b9a1badacdf8fb430ba26.s3tc.ctex::
-Wheel_Car Pallete.png::CompressedTexture2D/CompressedTexture2D::4649182160325918779::1744464771::1744465755::1::::<><><>0<>0<>a3f0ce8ec3b7a8ec3a8d6ea639b1587e<>res://.godot/imported/Wheel_Car Pallete.png-a5e5f77b4b27fcbb16ac278daa7fb0f6.s3tc.ctex::
-::res://scenes/::1744625320
-base level.tscn::PackedScene/PackedScene::8998661831663817795::1744465769::0::1::::<><><>0<>0<><>::uid://c25jwpky3nkyh::::res://scripts/world.gd<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://dha3e35mellml::::res://scenes/finish_line.tscn<>uid://e7xhihm6b8dl::::res://sfx/Click sound 8.wav<>uid://bp13u60do4abi::::res://scenes/player.tscn
-finish_line.tscn::PackedScene/PackedScene::7652292693067562855::1744465769::0::1::::<><><>0<>0<><>::uid://b1slkwk1ngepw::::res://scripts/finish_line.gd<>uid://c4odrbf3sksrs::::res://models/FinishLine.glb
-half_pipe.tscn::PackedScene/PackedScene::4685531505158659758::1744465769::0::1::::<><><>0<>0<><>::uid://c12605u0t38im::::res://scenes/road_tile.tscn
-main_menu.tscn::PackedScene::4647009258118432983::1744625320::0::1::::<><><>0<>0<><>::uid://h6p3vf5pmko::::res://scripts/main_menu.gd<>uid://bp13u60do4abi::::res://scenes/player.tscn
-music.tscn::PackedScene/PackedScene::2128010785375113897::1744465769::0::1::::<><><>0<>0<><>::
-player.tscn::PackedScene/PackedScene::3494664618544819602::1744465769::0::1::::<><><>0<>0<><>::uid://cuitqcdvi8ok7::::res://scripts/player.gd<>uid://cavywld24vo7i::::res://models/Car.glb<>uid://ceotr2ny82ayg::::res://models/Wheel.glb<>uid://bleod1yq50n7t::::res://sfx/Car Impact Concrete_3.wav<>uid://20mgjspu5j5j::::res://sfx/Car Engine Loop_3.wav<>uid://dt4t8mv6lx46q::::res://sfx/Impact 2.wav<>uid://casbf5t46ixsr::::res://sfx/Wind Storm.wav<>uid://bwohqb77vw06b::::res://scripts/camera.gd
-player_test.tscn::PackedScene/PackedScene::5550144342348496672::1744465769::0::1::::<><><>0<>0<><>::uid://cuitqcdvi8ok7::::res://scripts/player.gd<>uid://cavywld24vo7i::::res://models/Car.glb<>uid://ceotr2ny82ayg::::res://models/Wheel.glb<>uid://bwohqb77vw06b::::res://scripts/camera.gd<>uid://cujtechiu4d5r::::res://scripts/timer.gd
-road_tile.tscn::PackedScene/PackedScene::6655417980717048400::1744465769::0::1::::<><><>0<>0<><>::uid://cp5c25n2adoi6::::res://models/RoadTile.glb
-road_tile_long.tscn::PackedScene/PackedScene::6856858539970172332::1744465769::0::1::::<><><>0<>0<><>::uid://o473dwqsfdon::::res://models/RoadTileLong.glb
-speedrun_timer.tscn::PackedScene/PackedScene::4009493067672399836::1744465769::0::1::::<><><>0<>0<><>::uid://bue4wclikmjbg::::res://scripts/speedrun_timer.gd<>uid://cujtechiu4d5r::::res://scripts/timer.gd
-speed_bump_round.tscn::PackedScene/PackedScene::2334263148134673323::1744465769::0::1::::<><><>0<>0<><>::uid://bkejaexs6ku2::::res://models/SpeedBumpRound.glb
-speed_bump_square.tscn::PackedScene/PackedScene::3233074525320859188::1744465769::0::1::::<><><>0<>0<><>::uid://ddv0g2tadagof::::res://models/SpeedBumpSquare.glb
-::res://scenes/levels/::1744465769
-1.tscn::PackedScene/PackedScene::6540826193594191589::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn
-2.tscn::PackedScene/PackedScene::4929846924927476935::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
-3.tscn::PackedScene/PackedScene::2867996724156001569::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://8iy8c2f3v1hn::::res://scenes/speed_bump_round.tscn<>uid://bmcejaop3vdr5::::res://scenes/speed_bump_square.tscn
-4.tscn::PackedScene/PackedScene::3010264408271069739::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-5.tscn::PackedScene/PackedScene::8897222556432801048::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
-6.tscn::PackedScene/PackedScene::7534271513217287925::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-7.tscn::PackedScene/PackedScene::5586066676815279853::1744465768::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-8.tscn::PackedScene/PackedScene::5689215212300003417::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-9.tscn::PackedScene/PackedScene::6347404185985377456::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
-10.tscn::PackedScene/PackedScene::4049252868519684369::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
-11.tscn::PackedScene/PackedScene::8472587847994088065::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-12.tscn::PackedScene/PackedScene::3134733938311119062::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn<>uid://b70yawltautba::::res://scenes/half_pipe.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-13.tscn::PackedScene/PackedScene::6142198802720149518::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
-14.tscn::PackedScene/PackedScene::3143972321916294598::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
-15.tscn::PackedScene/PackedScene::7982454187830705446::1744465769::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
-::res://scripts/::1744465752
-camera.gd::GDScript/GDScript::3959930227378476675::1744464770::0::1::::<>Camera3D<><>0<>0<><>::
-finish_line.gd::GDScript/GDScript::4249176334875180772::1744464770::0::1::::<>Area3D<><>0<>0<><>::
-free_look_camera.gd::GDScript/GDScript::7265683917481917170::1744464770::0::1::::<>Camera3D<><>0<>0<><>::
-main_menu.gd::GDScript/GDScript::16361161325320010::1744464770::0::1::::<>Node3D<><>0<>0<><>::
-player.gd::GDScript/GDScript::6194315568391630868::1744464770::0::1::::<>VehicleBody3D<><>0<>0<><>::
-speedrun_timer.gd::GDScript/GDScript::3800255270143000716::1744464770::0::1::::<>Control<><>0<>0<><>::
-timer.gd::GDScript/GDScript::6196358522223255809::1744464770::0::1::::<>Label<><>0<>0<><>::
-world.gd::GDScript/GDScript::6730458023062362887::1744464770::0::1::::<>Node3D<><>0<>0<><>::
-world_object.gd::GDScript/GDScript::5601858867536542419::1744464770::0::1::::<>Node3D<><>0<>0<><>::
-::res://sfx/::1744465754
-Car Engine Loop_3.wav::AudioStreamWAV/AudioStreamWAV::1947448041981075129::1744464771::1744465753::1::::<><><>0<>0<>0719dc1792161ebde7b55ab8cbbafe48<>res://.godot/imported/Car Engine Loop_3.wav-f44655036c8ca955a9bb91283ed999a1.sample::
-Car Impact Concrete.wav::AudioStreamWAV/AudioStreamWAV::641876799145207171::1744464771::1744465753::1::::<><><>0<>0<>75fd4cdeb164e2a1851a97ef0e977232<>res://.godot/imported/Car Impact Concrete.wav-2d4f02720fc27917dbb981e97f3318b1.sample::
-Car Impact Concrete_1.wav::AudioStreamWAV/AudioStreamWAV::6513511916770950602::1744464771::1744465753::1::::<><><>0<>0<>20840557f69b8453c05737b96e852299<>res://.godot/imported/Car Impact Concrete_1.wav-4540428dc1404de69f3f22ea4546f3d6.sample::
-Car Impact Concrete_2.wav::AudioStreamWAV/AudioStreamWAV::8341991189011857939::1744464771::1744465753::1::::<><><>0<>0<>50e763aace4afef1cd0b3f01ba0e3883<>res://.godot/imported/Car Impact Concrete_2.wav-7f108b1dc388388af6b342daa48ee45f.sample::
-Car Impact Concrete_3.wav::AudioStreamWAV/AudioStreamWAV::3167612273458606895::1744464771::1744465753::1::::<><><>0<>0<>ced4513b8aaef9fede034dbd19358ebe<>res://.godot/imported/Car Impact Concrete_3.wav-75114477c4066232c22f2a949d28b8b3.sample::
-Car Impact Concrete_4.wav::AudioStreamWAV/AudioStreamWAV::6648203773431262116::1744464771::1744465753::1::::<><><>0<>0<>ab80fc06f97b3d4456765b053ec4e63a<>res://.godot/imported/Car Impact Concrete_4.wav-98692d7d94d900544aafcaa0694b5709.sample::
-Click sound 5.wav::AudioStreamWAV/AudioStreamWAV::3944042105404166625::1744464771::1744465753::1::::<><><>0<>0<>04e2d07292c46d269c75dbc67e2ae2db<>res://.godot/imported/Click sound 5.wav-387e2620b824467165fc105c57643d53.sample::
-Click sound 8.wav::AudioStreamWAV/AudioStreamWAV::348224885660166445::1744464771::1744465753::1::::<><><>0<>0<>5f6a7e63e1b52e4fbd8e4e50f5bff946<>res://.godot/imported/Click sound 8.wav-f7415b47eeadf5a17bd4589a7b4f97c7.sample::
-Impact 2.wav::AudioStreamWAV/AudioStreamWAV::8553930253276307242::1744464771::1744465753::1::::<><><>0<>0<>419f036fa3e9c26d4bbccdf9fad8078c<>res://.godot/imported/Impact 2.wav-6e9a51c039c9b383a8df94a4904cc8a1.sample::
-Ocean (Loopable).wav::AudioStreamWAV/AudioStreamWAV::7511670614819491785::1744464772::1744465754::1::::<><><>0<>0<>94e08a9a01e80c283983f58ea18734c0<>res://.godot/imported/Ocean (Loopable).wav-1848dd2549b1fbca871a525a831d946a.sample::
-Wind Storm.wav::AudioStreamWAV/AudioStreamWAV::4810071419332752609::1744464772::1744465754::1::::<><><>0<>0<>1cbf1c82ee8caaadcb5c409d441b284d<>res://.godot/imported/Wind Storm.wav-9baf50e4c79230905087dee2af8b4e63.sample::
+::res://::1744659075
+gdre_export.log::TextFile::-1::1744659030::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::3949491545629177401::1744659030::1744659076::1::::<><><>0<>0<>ebdadfa0517c55ca8c7724c12b2e3224<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://addons/::1744659030
+::res://addons/gd-blender-3d-shortcuts/::1744659030
+plugin.cfg::TextFile::-1::1744659030::0::1::::<><><>0<>0<><>::
+plugin.gd::GDScript::1357225097704272525::1744659030::0::1::::<>EditorPlugin<><>0<>1<><>::
+Utils.gd::GDScript::5693112391151300790::1744659030::0::1::::<>RefCounted<><>0<>0<><>::
+::res://addons/gd-blender-3d-shortcuts/scenes/::1744659030
+::res://addons/gd-blender-3d-shortcuts/scenes/pie_menu/::1744659030
+PieMenu.gd::GDScript::8641390250669976176::1744659030::0::1::::<>Control<><>0<>1<><>::
+PieMenu.tscn::PackedScene::4042801803876559948::1744659030::0::1::::<><><>0<>0<><>::uid://dvd7o10sbf4ca::::res://addons/gd-blender-3d-shortcuts/scenes/pie_menu/PieMenu.gd
+PieMenuGroup.gd::GDScript::8678479272397852172::1744659030::0::1::::<>Control<><>0<>1<><>::
+PieMenuGroup.tscn::PackedScene::6812751974458158249::1744659030::0::1::::<><><>0<>0<><>::uid://dvv6jyifnifu7::::res://addons/gd-blender-3d-shortcuts/scenes/pie_menu/PieMenuGroup.gd
+::res://hdri/::1744659030
+::res://models/::1744659030
+Car_Car Pallete.png::CompressedTexture2D/CompressedTexture2D::786255221341506102::1744659030::1744659076::1::::<><><>0<>0<>4f1b13bb5feb1ce127ad3e7f2046ceec<>res://.godot/imported/Car_Car Pallete.png-746d13e46bd21dba770e06a61c048326.s3tc.ctex::
+RoadTileLonger_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::9146882464930152910::1744659030::1744659076::1::::<><><>0<>0<>08f1b0a6db1f397b13f04fa424633e4a<>res://.godot/imported/RoadTileLonger_Road Pallette.png-803c8fcfa26bd1b25152641ca7275531.ctex::
+RoadTileLongest_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::6627802178155169464::1744659030::1744659076::1::::<><><>0<>0<>a5cf198e87807030d2becb43a48ebf53<>res://.godot/imported/RoadTileLongest_Road Pallette.png-9feea2c28cd3de28c65ac932f373c2ac.ctex::
+RoadTileLong_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::5714732681856323948::1744659030::1744659076::1::::<><><>0<>0<>18f27a0b7546ffcae7a162cb143ce689<>res://.godot/imported/RoadTileLong_Road Pallette.png-f28e742f5e458aa1c4bbb2444fd19345.s3tc.ctex::
+RoadTile_Road Pallette.png::CompressedTexture2D/CompressedTexture2D::3985423517590724232::1744659030::1744659076::1::::<><><>0<>0<>c105c282b7e9483a8a140ad465342159<>res://.godot/imported/RoadTile_Road Pallette.png-4404edb1990b9a1badacdf8fb430ba26.s3tc.ctex::
+Wheel_Car Pallete.png::CompressedTexture2D/CompressedTexture2D::4649182160325918779::1744659030::1744659076::1::::<><><>0<>0<>a3f0ce8ec3b7a8ec3a8d6ea639b1587e<>res://.godot/imported/Wheel_Car Pallete.png-a5e5f77b4b27fcbb16ac278daa7fb0f6.s3tc.ctex::
+::res://scenes/::1744659030
+base level.tscn::PackedScene::8998661831663817795::1744659030::0::1::::<><><>0<>0<><>::uid://c25jwpky3nkyh::::res://scripts/world.gd<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://dha3e35mellml::::res://scenes/finish_line.tscn<>uid://e7xhihm6b8dl::::res://sfx/Click sound 8.wav<>uid://bp13u60do4abi::::res://scenes/player.tscn
+finish_line.tscn::PackedScene::7652292693067562855::1744659030::0::1::::<><><>0<>0<><>::uid://b1slkwk1ngepw::::res://scripts/finish_line.gd<>uid://c4odrbf3sksrs::::res://models/FinishLine.glb
+half_pipe.tscn::PackedScene::4685531505158659758::1744659030::0::1::::<><><>0<>0<><>::uid://c12605u0t38im::::res://scenes/road_tile.tscn
+main_menu.tscn::PackedScene::4647009258118432983::1744659030::0::1::::<><><>0<>0<><>::uid://h6p3vf5pmko::::res://scripts/main_menu.gd<>uid://bp13u60do4abi::::res://scenes/player.tscn
+music.tscn::PackedScene::2128010785375113897::1744659030::0::1::::<><><>0<>0<><>::
+player.tscn::PackedScene::3494664618544819602::1744659030::0::1::::<><><>0<>0<><>::uid://cuitqcdvi8ok7::::res://scripts/player.gd<>uid://cavywld24vo7i::::res://models/Car.glb<>uid://ceotr2ny82ayg::::res://models/Wheel.glb<>uid://bleod1yq50n7t::::res://sfx/Car Impact Concrete_3.wav<>uid://20mgjspu5j5j::::res://sfx/Car Engine Loop_3.wav<>uid://dt4t8mv6lx46q::::res://sfx/Impact 2.wav<>uid://casbf5t46ixsr::::res://sfx/Wind Storm.wav<>uid://bwohqb77vw06b::::res://scripts/camera.gd
+player_test.tscn::PackedScene::5550144342348496672::1744659030::0::1::::<><><>0<>0<><>::uid://cuitqcdvi8ok7::::res://scripts/player.gd<>uid://cavywld24vo7i::::res://models/Car.glb<>uid://ceotr2ny82ayg::::res://models/Wheel.glb<>uid://bwohqb77vw06b::::res://scripts/camera.gd<>uid://cujtechiu4d5r::::res://scripts/timer.gd
+road_tile.tscn::PackedScene::6655417980717048400::1744659030::0::1::::<><><>0<>0<><>::uid://cp5c25n2adoi6::::res://models/RoadTile.glb
+road_tile_long.tscn::PackedScene::6856858539970172332::1744659030::0::1::::<><><>0<>0<><>::uid://o473dwqsfdon::::res://models/RoadTileLong.glb
+speedrun_timer.tscn::PackedScene::4009493067672399836::1744659030::0::1::::<><><>0<>0<><>::uid://bue4wclikmjbg::::res://scripts/speedrun_timer.gd<>uid://cujtechiu4d5r::::res://scripts/timer.gd
+speed_bump_round.tscn::PackedScene::2334263148134673323::1744659030::0::1::::<><><>0<>0<><>::uid://bkejaexs6ku2::::res://models/SpeedBumpRound.glb
+speed_bump_square.tscn::PackedScene::3233074525320859188::1744659030::0::1::::<><><>0<>0<><>::uid://ddv0g2tadagof::::res://models/SpeedBumpSquare.glb
+::res://scenes/levels/::1744659030
+1.tscn::PackedScene::6540826193594191589::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn
+2.tscn::PackedScene::4929846924927476935::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
+3.tscn::PackedScene::2867996724156001569::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://8iy8c2f3v1hn::::res://scenes/speed_bump_round.tscn<>uid://bmcejaop3vdr5::::res://scenes/speed_bump_square.tscn
+4.tscn::PackedScene::3010264408271069739::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+5.tscn::PackedScene::8897222556432801048::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
+6.tscn::PackedScene::7534271513217287925::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+7.tscn::PackedScene::5586066676815279853::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+8.tscn::PackedScene::5689215212300003417::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+9.tscn::PackedScene::6347404185985377456::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
+10.tscn::PackedScene::4049252868519684369::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
+11.tscn::PackedScene::8472587847994088065::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+12.tscn::PackedScene::3134733938311119062::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn<>uid://b70yawltautba::::res://scenes/half_pipe.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+13.tscn::PackedScene::6142198802720149518::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
+14.tscn::PackedScene::3143972321916294598::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c12605u0t38im::::res://scenes/road_tile.tscn
+15.tscn::PackedScene::7982454187830705446::1744659030::0::1::::<><><>0<>0<><>::uid://d1hav7mq0aqdn::::res://scenes/base level.tscn<>uid://c4xrpt4eupmhw::::res://scenes/road_tile_long.tscn
+::res://scripts/::1744659030
+camera.gd::GDScript::3959930227378476675::1744659030::0::1::::<>Camera3D<><>0<>0<><>::
+finish_line.gd::GDScript::4249176334875180772::1744659030::0::1::::<>Area3D<><>0<>0<><>::
+free_look_camera.gd::GDScript::7265683917481917170::1744659030::0::1::::<>Camera3D<><>0<>0<><>::
+main_menu.gd::GDScript::16361161325320010::1744659030::0::1::::<>Node3D<><>0<>0<><>::
+player.gd::GDScript::6194315568391630868::1744659030::0::1::::<>VehicleBody3D<><>0<>0<><>::
+speedrun_timer.gd::GDScript::3800255270143000716::1744659030::0::1::::<>Control<><>0<>0<><>::
+timer.gd::GDScript::6196358522223255809::1744659030::0::1::::<>Label<><>0<>0<><>::
+world.gd::GDScript::6730458023062362887::1744659030::0::1::::<>Node3D<><>0<>0<><>::
+world_object.gd::GDScript::5601858867536542419::1744659030::0::1::::<>Node3D<><>0<>0<><>::
+::res://sfx/::1744659030
+Car Engine Loop_3.wav::AudioStreamWAV/AudioStreamWAV::1947448041981075129::1744659030::1744659077::1::::<><><>0<>0<>0719dc1792161ebde7b55ab8cbbafe48<>res://.godot/imported/Car Engine Loop_3.wav-f44655036c8ca955a9bb91283ed999a1.sample::
+Car Impact Concrete.wav::AudioStreamWAV/AudioStreamWAV::641876799145207171::1744659030::1744659077::1::::<><><>0<>0<>75fd4cdeb164e2a1851a97ef0e977232<>res://.godot/imported/Car Impact Concrete.wav-2d4f02720fc27917dbb981e97f3318b1.sample::
+Car Impact Concrete_1.wav::AudioStreamWAV/AudioStreamWAV::6513511916770950602::1744659030::1744659077::1::::<><><>0<>0<>20840557f69b8453c05737b96e852299<>res://.godot/imported/Car Impact Concrete_1.wav-4540428dc1404de69f3f22ea4546f3d6.sample::
+Car Impact Concrete_2.wav::AudioStreamWAV/AudioStreamWAV::8341991189011857939::1744659030::1744659077::1::::<><><>0<>0<>50e763aace4afef1cd0b3f01ba0e3883<>res://.godot/imported/Car Impact Concrete_2.wav-7f108b1dc388388af6b342daa48ee45f.sample::
+Car Impact Concrete_3.wav::AudioStreamWAV/AudioStreamWAV::3167612273458606895::1744659030::1744659077::1::::<><><>0<>0<>ced4513b8aaef9fede034dbd19358ebe<>res://.godot/imported/Car Impact Concrete_3.wav-75114477c4066232c22f2a949d28b8b3.sample::
+Car Impact Concrete_4.wav::AudioStreamWAV/AudioStreamWAV::6648203773431262116::1744659030::1744659077::1::::<><><>0<>0<>ab80fc06f97b3d4456765b053ec4e63a<>res://.godot/imported/Car Impact Concrete_4.wav-98692d7d94d900544aafcaa0694b5709.sample::
+Click sound 5.wav::AudioStreamWAV/AudioStreamWAV::3944042105404166625::1744659030::1744659077::1::::<><><>0<>0<>04e2d07292c46d269c75dbc67e2ae2db<>res://.godot/imported/Click sound 5.wav-387e2620b824467165fc105c57643d53.sample::
+Click sound 8.wav::AudioStreamWAV/AudioStreamWAV::348224885660166445::1744659030::1744659077::1::::<><><>0<>0<>5f6a7e63e1b52e4fbd8e4e50f5bff946<>res://.godot/imported/Click sound 8.wav-f7415b47eeadf5a17bd4589a7b4f97c7.sample::
+Impact 2.wav::AudioStreamWAV/AudioStreamWAV::8553930253276307242::1744659030::1744659077::1::::<><><>0<>0<>419f036fa3e9c26d4bbccdf9fad8078c<>res://.godot/imported/Impact 2.wav-6e9a51c039c9b383a8df94a4904cc8a1.sample::
+Ocean (Loopable).wav::AudioStreamWAV/AudioStreamWAV::7511670614819491785::1744659030::1744659077::1::::<><><>0<>0<>94e08a9a01e80c283983f58ea18734c0<>res://.godot/imported/Ocean (Loopable).wav-1848dd2549b1fbca871a525a831d946a.sample::
+Wind Storm.wav::AudioStreamWAV/AudioStreamWAV::4810071419332752609::1744659030::1744659077::1::::<><><>0<>0<>1cbf1c82ee8caaadcb5c409d441b284d<>res://.godot/imported/Wind Storm.wav-9baf50e4c79230905087dee2af8b4e63.sample::
